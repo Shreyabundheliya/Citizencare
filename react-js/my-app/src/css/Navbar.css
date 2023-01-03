@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar1 {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  /* background-color: White; */
+  /* color: Black; */
+  /* box-shadow: 0px 1px 8px 1px rgb(167, 165, 165); */
+  box-shadow: rgba(50,50,93,0.23) 0 30px 30px -20px ;
+  /* position: sticky; */
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 85%;
+  padding: 0px 60px;
+}
+
+.home1,
+.about1,
+.service1,
+.login1,
+.registration {
+  text-decoration: none;
+  color: Black;
+  font-size: 22px;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.home1:hover {
+  text-decoration: 3px solid underline;
+  text-decoration-color: black;
+  color: black;
+}
+
+.about1:hover {
+  text-decoration: 3px solid underline;
+  text-decoration-color: black;
+  color: black;
+}
+
+.service1:hover {
+  text-decoration: 3px solid underline;
+  text-decoration-color: black;
+  color: black;
+}
+
+.login1:hover {
+  text-decoration: 3px solid underline;
+  text-decoration-color: black;
+  color: black;
+}
+
+.registration:hover {
+  text-decoration: 3px solid underline;
+  text-decoration-color: black;
+  color: black;
+}
+
+/* .login1,
+  .registration {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+  }  */
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 780px) and (min-width: 300px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color:brown;
+    color: black;
+    overflow: hidden;
+    left: 0;
+    top: 75px;
+    /* transition: all 0.5s ease-out; */
+    width: 100%;
+  }
+
+  .home1,
+  .service1,
+  .about1,
+  .login1,
+  .registration {
+    color: black;
+    /* background-color: black; */
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border: none;
+    top: 15px;
+    right: 25px;
+  }
+}
